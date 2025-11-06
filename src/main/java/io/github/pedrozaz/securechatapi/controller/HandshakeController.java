@@ -48,4 +48,6 @@ public class HandshakeController {
 
         return new HandshakeResponse(session.getId(), serverPublicKeyBase64);
     }
+
+
 }
