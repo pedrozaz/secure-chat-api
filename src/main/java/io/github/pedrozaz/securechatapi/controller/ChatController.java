@@ -6,10 +6,12 @@ import io.github.pedrozaz.securechatapi.model.SecureSession;
 import io.github.pedrozaz.securechatapi.repository.SecureSessionRepository;
 import io.github.pedrozaz.securechatapi.service.CryptoService;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.util.Base64;

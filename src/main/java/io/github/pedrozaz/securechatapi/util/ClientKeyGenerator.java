@@ -7,7 +7,7 @@ import java.util.Base64;
 
 public class ClientKeyGenerator {
 
-    public static void main(String[] args) throws NoSuchAlgorithmException {
+    static void main() throws NoSuchAlgorithmException {
         KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("DH");
         keyPairGenerator.initialize(2048);
         KeyPair keyPair = keyPairGenerator.generateKeyPair();
