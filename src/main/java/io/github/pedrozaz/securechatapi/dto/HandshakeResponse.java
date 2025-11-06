@@ -1,10 +1,4 @@
 package io.github.pedrozaz.securechatapi.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-@JsonIgnoreProperties(ignoreUnknown = true)
-public record HandshakeResponse(
-        @JsonProperty String sessionId,
-        @JsonProperty String serverPublicKey) {
+public record HandshakeResponse(String sessionId, String serverPublicKey) {
 }

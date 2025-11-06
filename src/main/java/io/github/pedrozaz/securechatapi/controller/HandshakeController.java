@@ -41,12 +41,11 @@ public class HandshakeController {
         byte[] sharedSecret = cryptoService.computeSharedSecret(serverKeyPair.getPrivate(),
                 serverKeyPair.getPublic());
 
-        String sessionId = UUID.randomUUID().toString();
-        SecureSession session = new SecureSession(sessionId, sharedSecret);
+        SecureSession session = new SecureSession(sharedSecret);
         sessionRepository.save(session);
 
         String serverPublicKeyBase64 = Base64.getEncoder().encodeToString(serverKeyPair.getPublic().getEncoded());
 
-        return new HandshakeResponse(sessionId, serverPublicKeyBase64);
+        return new HandshakeResponse(session.getId(), serverPublicKeyBase64);
     }
 }
