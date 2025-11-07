@@ -37,6 +37,10 @@ The communication flow is divided into two main phases:
     "serverPublicKey": "<base64_encoded_server_public_key>"
 }
 ```
+#
+- **Example**:
+<img width="973" height="654" alt="image" src="https://github.com/user-attachments/assets/3837ae9d-5b9e-402c-9cb8-e3087aee5f79" />
+
 
 #
 #
@@ -59,3 +63,7 @@ The communication flow is divided into two main phases:
     "decryptedData": "<original_plaintext_message>"
 }
 ```
+#
+- **Example**:
+<img width="973" height="549" alt="image" src="https://github.com/user-attachments/assets/46f6dad6-a46d-4ce1-823e-084fcd8bb3db" />
+
