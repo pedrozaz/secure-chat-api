@@ -41,9 +41,8 @@ The communication flow is divided into two main phases:
 - **Example**:
 <img width="973" height="654" alt="image" src="https://github.com/user-attachments/assets/3837ae9d-5b9e-402c-9cb8-e3087aee5f79" />
 
+#
 
-#
-#
 ### 2. Send Secure Message
 
 > POST /api/chat/message
